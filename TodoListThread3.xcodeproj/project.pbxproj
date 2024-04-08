@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BF4742B52BC441160084E6E5 /* TodoListThread3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4742B42BC441160084E6E5 /* TodoListThread3App.swift */; };
-		BF4742B72BC441160084E6E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4742B62BC441160084E6E5 /* ContentView.swift */; };
+		BF4742B72BC441160084E6E5 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4742B62BC441160084E6E5 /* LandingView.swift */; };
 		BF4742B92BC441180084E6E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4742B82BC441180084E6E5 /* Assets.xcassets */; };
 		BF4742BC2BC441180084E6E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4742BB2BC441180084E6E5 /* Preview Assets.xcassets */; };
 		BF4742C62BC441180084E6E5 /* TodoListThread3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4742C52BC441180084E6E5 /* TodoListThread3Tests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		BF4742B12BC441160084E6E5 /* TodoListThread3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoListThread3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF4742B42BC441160084E6E5 /* TodoListThread3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListThread3App.swift; sourceTree = "<group>"; };
-		BF4742B62BC441160084E6E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BF4742B62BC441160084E6E5 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		BF4742B82BC441180084E6E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF4742BB2BC441180084E6E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF4742C12BC441180084E6E5 /* TodoListThread3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoListThread3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +95,9 @@
 			isa = PBXGroup;
 			children = (
 				BF4742B42BC441160084E6E5 /* TodoListThread3App.swift */,
-				BF4742B62BC441160084E6E5 /* ContentView.swift */,
+				BF4742E02BC443730084E6E5 /* Helpers */,
+				BF4742DF2BC4434F0084E6E5 /* Model */,
+				BF4742DE2BC443130084E6E5 /* Views */,
 				BF4742B82BC441180084E6E5 /* Assets.xcassets */,
 				BF4742BA2BC441180084E6E5 /* Preview Content */,
 			);
@@ -125,6 +127,28 @@
 				BF4742D12BC441180084E6E5 /* TodoListThread3UITestsLaunchTests.swift */,
 			);
 			path = TodoListThread3UITests;
+			sourceTree = "<group>";
+		};
+		BF4742DE2BC443130084E6E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF4742B62BC441160084E6E5 /* LandingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BF4742DF2BC4434F0084E6E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF4742E02BC443730084E6E5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF4742B72BC441160084E6E5 /* ContentView.swift in Sources */,
+				BF4742B72BC441160084E6E5 /* LandingView.swift in Sources */,
 				BF4742B52BC441160084E6E5 /* TodoListThread3App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
