@@ -8,15 +8,23 @@
 import SwiftUI
 
 struct ItemView: View {
-    let currentItem: TodoItem
+    @Binding var currentItem: TodoItem
     var body: some View {
         Label(
-            title: {  Text(currentItem.title)
+            title: {  
+                TextField("Enter a to-do item", text: $currentItem.title, axis: .vertical)
             },
-            icon: { Image(systemName: currentItem.done == true ? "checkmark.circle" : "circle")}
-        )
+            icon: { Image(systemName: currentItem.done == true ? "checkmark.circle" : "circle")
+                    .onTapGesture {
+                        currentItem.done.toggle()
+                    }
+            }
+            )
     }
 }
 #Preview {
-    ItemView(currentItem: firstItem)
+    List{
+        ItemView(currentItem: Binding.constant(firstItem))
+        ItemView(currentItem: Binding.constant(secondItem))
+    }
 }
